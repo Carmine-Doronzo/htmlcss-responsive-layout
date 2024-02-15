@@ -41,9 +41,16 @@ button{
 }
 
 .col-6-12{
-    width: calc(6 * 100% /12);
+    width: calc(6 * 100% / 12);
 }
 
+.col-4-12{
+    width: calc(4 * 100% / 12);   
+}
+
+.col-2-12{
+    width: calc(2 * 100% / 12);   
+}
 
 /* STYLE */
 
@@ -68,6 +75,34 @@ button{
 
 .nav-bar .container{
     padding-top: 20px;
+}
+
+/* HERO */
+.hero .container .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.hero .container .row .col-6-12.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .container .row .col-4-12{
+    width: calc(4 * 100% / 12)+24px;
+    display: flex;
+    background-color: #b5ddff;
+}
+
+.hero .container .row .col-2-12{
+    background-color: #b5ddff;
+
+}
+
+.hero .container .row .col-2-12 i{
+    font-size: 70px;
 }
 
 
