@@ -275,9 +275,38 @@ button{
     }
 }
 
+/* benefits */
+
+.benefits{
+    padding: 20px 0;
+    background-color: #9392e0;
+}
+
+.col-benefits{
+    padding: 40px;
+    background-color: white;
+    border-radius: 50px;
+}
+.col-benefits > *{
+    padding: 20px 0;
+}
+
+.benefits .container .row{
+    gap: 25px;
+}
+
+@media (min-width:768px){
+    .col-benefits{
+        width: calc((6 * 100% / 12) - 25px);
+    }
+}
+
+@media (min-width:992px){
+    .col-benefits{
+        width: calc((4 * 100% / 12) - 25px);
+    }
+}
+
 
 /* UTILITY */
 
-.text-align{
-    text-align: left;
-}
