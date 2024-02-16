@@ -209,8 +209,8 @@ button{
 } 
 
 @media (min-width:992px){
-    .col-strategic .col-strategic-lt{
-        width: calc(6 * 100% / 12);
+    .col-strategic,.col-strategic-lt{
+        width: calc(6 * 100% / 12 );
     }
 
     .col-strategic-lt{
@@ -293,6 +293,14 @@ button{
 
 .benefits .container .row{
     gap: 25px;
+}
+
+.benefits .container h2{
+    text-align: center;
+}
+
+.benefits .container > *{
+    padding: 20px 0;
 }
 
 @media (min-width:768px){
