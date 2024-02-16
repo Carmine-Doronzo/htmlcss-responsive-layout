@@ -38,6 +38,8 @@ button{
     padding: 0 12px;
 }
 
+
+
 .row{
     display:flex;
     flex-wrap: wrap;
@@ -104,6 +106,7 @@ button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
     
 }
 
@@ -140,6 +143,7 @@ button{
     
     width: calc(12 * 100% /12);
     background-color: #b5ddff;
+    border-radius: 50px;
    
     
 }
@@ -149,16 +153,17 @@ button{
 }
 
 @media (min-width:768px) {
-    .col-8{
-        width: calc(8 * 100% / 12);   
+    .col-8-md{
+        width: calc(8 * 100% / 12 - 24px);   
     }
     
-    .col-4{
-        width: calc(4 * 100% / 12);   
+    .col-4-md{
+        width: calc(4 * 100% / 12 - 24px);   
     }
     
     
 }
+
 
 @media (max-width:992px){
     .thumb img{
@@ -173,6 +178,102 @@ button{
     
 }
 
+/* Strategic */
+.strategic {
+    background-color: #9392e0;
+}
+
+.strategic .container {
+    padding: 20px;
+    width: 100%;
+}
+
+.col-strategic{
+    color: white;
+}
+
+.col-strategic > *{
+    padding: 20px 0;
+}
+
+.col-strategic-lt{
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+}
+
+ .col-strategic-lt > *{
+    padding: 20px 
+   
+} 
+
+@media (min-width:992px){
+    .col-strategic .col-strategic-lt{
+        width: calc(6 * 100% / 12);
+    }
+
+    .col-strategic-lt{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .strategic .container .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+/* testimonials */
+.testimonials{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.testimonials .container > *{
+    padding: 20px 0;
+}
+
+.testimonial{
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #9392e0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial > *{
+    padding: 20px 0;
+}
+
+.testimonial img{
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description >*{
+    padding: 20px 0;
+}
+
+@media (min-width:768px){
+    .testimonial{
+        flex-direction: row;
+    }
+}
 
 
 /* UTILITY */
