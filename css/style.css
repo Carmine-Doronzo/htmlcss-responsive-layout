@@ -253,10 +253,10 @@ button{
 
 .testimonial img{
     display: block;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1; 
     border-radius: 500px;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    
 }
 
 .description{
@@ -314,6 +314,41 @@ button{
         width: calc((4 * 100% / 12) - 25px);
     }
 }
+
+/* about us */
+.about-us{
+    padding: 20px 0;
+}
+
+.about-us .container .row .col-about-us>*{
+    padding: 20px 
+
+}
+
+.about-us .container .row .col-about-us img{
+    display: block;
+    aspect-ratio: 1/1; 
+    border-radius: 500px;
+    width: 210px;
+
+}
+
+.about-us .container .row .col-about-us .quote:nth-child(2)
+{
+    transform: translate(10px);
+}
+
+@media (min-width:768px){
+    .col-about-us{
+        width: calc(8 * 100% / 12);
+    }
+
+
+    .col-about-us.quote{
+        width: calc(4 * 100% / 12);
+    }
+}
+
 
 
 /* UTILITY */
