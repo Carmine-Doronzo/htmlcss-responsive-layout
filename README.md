@@ -1,0 +1,1 @@
+Un'altro esercizio in cui applichiamo delle media-query utilizzando l'approccio mobile first con la differenza che questa volta il codice è stato scritto da zero da me.
